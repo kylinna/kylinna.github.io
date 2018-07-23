@@ -13,13 +13,30 @@
 body {
     font-family: courier;
     background-color: black;
+    background-image: url("images/hearts.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: maroon;
     text-align: center;
 }
 
+#hearts1 {
+  position: fixed;
+  z-index: -2;
+  bottom: 30%;
+  left: 100px;
+}
+
+#hearts2 {
+  position: fixed;
+  z-index: -2;
+  bottom: 30%;
+  right: 100px;
+}
+
 header {
     font-family: 'Reenie Beanie', cursive;
-    font-size: 46pt;
+    font-size: 42pt;
 }
 
 footer {
@@ -43,7 +60,7 @@ footer a:hover {
 h1 {
     margin: 0;
     margin-top: 50px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 form, #results {
@@ -64,8 +81,8 @@ form {
     position: relative;
     animation-name: scene-two;
     animation-duration: 2.5s;
-    padding: 40px;
-    padding-top: 20px;
+    padding: 80px;
+    padding-top: 40px;
 }
 
 label {
@@ -102,7 +119,7 @@ input[type=submit], input[type=reset], #results a {
     background-color: #ffd3e0;
     padding: 5px;
     margin: 5px;
-    margin-top: 25px;
+    margin-top: 60px;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -130,9 +147,9 @@ input[type=submit]:hover, input[type=reset]:hover, #results a:hover {
 #results p {
     font-size: 16pt;
     text-align: left;
-    padding: 20px;
     display: block;
 }
+
 
 #column-1, #column-2 {
     width: 50%;
